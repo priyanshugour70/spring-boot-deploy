@@ -17,6 +17,6 @@ public class LoginResponse {
     private String message;
 
     // User information (optional, depending on what you want to return)
-    private User user;
+    private Object user;
 
 }

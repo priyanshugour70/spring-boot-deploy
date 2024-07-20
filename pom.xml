@@ -122,6 +122,13 @@
 			<version>3.0.0</version>
 		</dependency>
 
+		<!-- MySql DB -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.30</version> <!-- or latest version -->
+		</dependency>
+
 	</dependencies>
 
 	<build>
