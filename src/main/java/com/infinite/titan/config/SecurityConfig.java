@@ -29,11 +29,11 @@ public class SecurityConfig {
 
         http.csrf(csrf -> csrf.disable())
                 .authorizeRequests()
-                .requestMatchers("/api/v1/**").permitAll()
+//                .requestMatchers("/api/v1/auth/login", "/api/v1/auth/register").permitAll() // Allow access to login and register endpoints
 //                .requestMatchers("/user/api/v1/**").hasRole("USER")
 //                .requestMatchers("/admin/api/v1/**").hasRole("ADMIN")
-                .anyRequest()
-                .authenticated()
+                .anyRequest().permitAll()
+//                .authenticated()
                 .and().exceptionHandling(ex -> ex.authenticationEntryPoint(point))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);

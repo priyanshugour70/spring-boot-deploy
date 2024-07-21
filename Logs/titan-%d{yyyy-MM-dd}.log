@@ -1206,3 +1206,414 @@ Consider defining a bean of type 'org.springframework.security.crypto.password.P
 2024-07-21 01:20:28 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-07-21 01:20:28 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
 2024-07-21 01:20:28 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2024-07-21 01:33:00 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-21 01:33:00 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 6258 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:33:00 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:33:00 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:33:00 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-21 01:33:00 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-21 01:33:01 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:33:01 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:33:02 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:33:02 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:33:02 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:33:02 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:33:02 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:33:02 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1813 ms
+2024-07-21 01:33:02 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2024-07-21 01:33:02 INFO  HikariPool:565 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32cc10e5
+2024-07-21 01:33:02 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2024-07-21 01:33:02 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:33:02 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-07-21 01:33:02 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:33:03 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:33:03 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:33:03 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:33:04 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:33:04 WARN  JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 01:33:04 INFO  EndpointLinksResolver:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-21 01:33:04 INFO  DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8c89427, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e84a6a9, org.springframework.security.web.context.SecurityContextHolderFilter@2be8c777, org.springframework.security.web.header.HeaderWriterFilter@56103c13, org.springframework.web.filter.CorsFilter@37b6fc6c, org.springframework.security.web.authentication.logout.LogoutFilter@1e0e8f93, com.infinite.titan.security.JwtAuthenticationFilter@32be9ac9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9d810fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3be52572, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c66aa99, org.springframework.security.web.session.SessionManagementFilter@2ea51c85, org.springframework.security.web.access.ExceptionTranslationFilter@51115be4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c8ea2aa]
+2024-07-21 01:33:04 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-07-21 01:33:05 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:33:05 INFO  TomcatWebServer:241 - Tomcat started on port 8888 (http) with context path ''
+2024-07-21 01:33:05 INFO  TitanApplication:56 - Started TitanApplication in 4.967 seconds (process running for 5.921)
+2024-07-21 01:33:05 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 01:33:05 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-21 01:33:05 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-07-21 01:33:12 WARN  DefaultHandlerExceptionResolver:247 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "1990-01-01": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '1990-01-01' could not be parsed at index 10]
+2024-07-21 01:35:20 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-21 01:35:20 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:35:20 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:35:20 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2024-07-21 01:35:21 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2024-07-21 01:35:21 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 6258 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:35:21 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:35:21 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:35:21 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:35:21 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:35:22 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:35:22 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:35:22 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:35:22 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:35:22 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:35:22 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 685 ms
+2024-07-21 01:35:22 INFO  HikariDataSource:110 - HikariPool-2 - Starting...
+2024-07-21 01:35:22 INFO  HikariPool:565 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ba63e66
+2024-07-21 01:35:22 INFO  HikariDataSource:123 - HikariPool-2 - Start completed.
+2024-07-21 01:35:22 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:35:22 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:35:22 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:35:22 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:35:22 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:35:22 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:35:22 WARN  AnnotationConfigServletWebServerApplicationContext:633 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'authService': Error creating bean with name 'authServiceImpl': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-07-21 01:35:22 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:35:22 INFO  HikariDataSource:350 - HikariPool-2 - Shutdown initiated...
+2024-07-21 01:35:22 INFO  HikariDataSource:352 - HikariPool-2 - Shutdown completed.
+2024-07-21 01:35:22 INFO  StandardService:173 - Stopping service [Tomcat]
+2024-07-21 01:35:22 INFO  ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-21 01:35:22 ERROR LoggingFailureAnalysisReporter:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.infinite.titan.service.impl.AuthServiceImpl required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2024-07-21 01:35:23 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 6258 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:35:24 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:35:24 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:35:24 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:35:24 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:35:24 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:35:24 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:35:24 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:35:24 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:35:24 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:35:24 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 278 ms
+2024-07-21 01:35:24 INFO  HikariDataSource:110 - HikariPool-3 - Starting...
+2024-07-21 01:35:24 INFO  HikariPool:565 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12929488
+2024-07-21 01:35:24 INFO  HikariDataSource:123 - HikariPool-3 - Start completed.
+2024-07-21 01:35:24 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:35:24 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:35:24 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:35:24 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:35:24 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:35:24 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:35:24 WARN  JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 01:35:24 INFO  EndpointLinksResolver:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-21 01:35:24 INFO  DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65da245e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20d3811c, org.springframework.security.web.context.SecurityContextHolderFilter@6cd10249, org.springframework.security.web.header.HeaderWriterFilter@658db996, org.springframework.web.filter.CorsFilter@6a90b295, org.springframework.security.web.authentication.logout.LogoutFilter@64a7777b, com.infinite.titan.security.JwtAuthenticationFilter@4f7a982d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71c6b33f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4df5cbb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47363db7, org.springframework.security.web.session.SessionManagementFilter@1886edab, org.springframework.security.web.access.ExceptionTranslationFilter@16957730, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28716d5e]
+2024-07-21 01:35:25 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-07-21 01:35:25 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:35:25 INFO  TomcatWebServer:241 - Tomcat started on port 8888 (http) with context path ''
+2024-07-21 01:35:25 INFO  TitanApplication:56 - Started TitanApplication in 1.168 seconds (process running for 146.014)
+2024-07-21 01:35:25 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2024-07-21 01:35:43 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 01:35:43 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-21 01:35:43 INFO  DispatcherServlet:554 - Completed initialization in 9 ms
+2024-07-21 01:35:43 WARN  DefaultHandlerExceptionResolver:247 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "1990-01-01": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '1990-01-01' could not be parsed at index 10]
+2024-07-21 01:38:33 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:38:33 INFO  HikariDataSource:350 - HikariPool-3 - Shutdown initiated...
+2024-07-21 01:38:33 INFO  HikariDataSource:352 - HikariPool-3 - Shutdown completed.
+2024-07-21 01:41:15 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-21 01:41:15 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 7708 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:41:15 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:41:15 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:41:15 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-21 01:41:15 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-21 01:41:16 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:41:16 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:41:17 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:41:17 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:41:17 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:41:17 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:41:17 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:41:17 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1887 ms
+2024-07-21 01:41:17 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2024-07-21 01:41:17 INFO  HikariPool:565 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@333fa56e
+2024-07-21 01:41:17 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2024-07-21 01:41:17 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:41:17 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-07-21 01:41:17 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:41:18 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:41:18 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:41:18 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:41:19 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:41:19 WARN  JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 01:41:19 INFO  EndpointLinksResolver:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-21 01:41:19 INFO  DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45c37d58, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@353ef84d, org.springframework.security.web.context.SecurityContextHolderFilter@252431fa, org.springframework.security.web.header.HeaderWriterFilter@5c0c86b1, org.springframework.web.filter.CorsFilter@3c8ea2aa, org.springframework.security.web.authentication.logout.LogoutFilter@552c1e42, com.infinite.titan.security.JwtAuthenticationFilter@4295586b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33c32375, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@396ea611, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46be2181, org.springframework.security.web.session.SessionManagementFilter@7dc16bd7, org.springframework.security.web.access.ExceptionTranslationFilter@11bb0251, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e87d129]
+2024-07-21 01:41:19 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-07-21 01:41:20 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:41:20 INFO  TomcatWebServer:241 - Tomcat started on port 8888 (http) with context path ''
+2024-07-21 01:41:20 INFO  TitanApplication:56 - Started TitanApplication in 5.06 seconds (process running for 6.29)
+2024-07-21 01:41:20 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 01:41:20 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-21 01:41:20 INFO  DispatcherServlet:554 - Completed initialization in 1 ms
+2024-07-21 01:41:25 WARN  DefaultHandlerExceptionResolver:247 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "1990-01-01": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '1990-01-01' could not be parsed at index 10]
+2024-07-21 01:43:45 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2024-07-21 01:43:46 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:43:46 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:43:46 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2024-07-21 01:43:46 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2024-07-21 01:43:46 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 7708 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:43:46 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:43:46 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:43:46 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:43:46 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:43:46 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:43:46 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:43:46 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:43:46 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:43:46 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:43:46 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 616 ms
+2024-07-21 01:43:47 INFO  HikariDataSource:110 - HikariPool-2 - Starting...
+2024-07-21 01:43:47 INFO  HikariPool:565 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@648b7316
+2024-07-21 01:43:47 INFO  HikariDataSource:123 - HikariPool-2 - Start completed.
+2024-07-21 01:43:47 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:43:47 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:43:47 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:43:47 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:43:47 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:43:47 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:43:47 WARN  JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 01:43:47 INFO  EndpointLinksResolver:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-21 01:43:47 INFO  DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@461288b9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a90ea91, org.springframework.security.web.context.SecurityContextHolderFilter@68608f1d, org.springframework.security.web.header.HeaderWriterFilter@3a1c9e92, org.springframework.web.filter.CorsFilter@131974a7, org.springframework.security.web.authentication.logout.LogoutFilter@4fcba5cf, com.infinite.titan.security.JwtAuthenticationFilter@21046eb8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38eb4739, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d58d25b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@307749a8, org.springframework.security.web.session.SessionManagementFilter@62ee6dc4, org.springframework.security.web.access.ExceptionTranslationFilter@4a7cdb11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68c08b99]
+2024-07-21 01:43:48 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-07-21 01:43:48 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:43:48 INFO  TomcatWebServer:241 - Tomcat started on port 8888 (http) with context path ''
+2024-07-21 01:43:48 INFO  TitanApplication:56 - Started TitanApplication in 2.017 seconds (process running for 154.436)
+2024-07-21 01:43:48 INFO  ConditionEvaluationDeltaLoggingListener:63 - Condition evaluation unchanged
+2024-07-21 01:43:49 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 3 class path changes (2 additions, 1 deletion, 0 modifications)
+2024-07-21 01:43:49 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:43:49 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:43:49 INFO  HikariDataSource:350 - HikariPool-2 - Shutdown initiated...
+2024-07-21 01:43:49 INFO  HikariDataSource:352 - HikariPool-2 - Shutdown completed.
+2024-07-21 01:43:49 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 7708 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:43:49 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:43:49 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:43:50 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:43:50 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:43:50 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:43:50 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:43:50 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:43:50 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:43:50 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:43:50 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 423 ms
+2024-07-21 01:43:50 INFO  HikariDataSource:110 - HikariPool-3 - Starting...
+2024-07-21 01:43:50 INFO  HikariPool:565 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c465bb3
+2024-07-21 01:43:50 INFO  HikariDataSource:123 - HikariPool-3 - Start completed.
+2024-07-21 01:43:50 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:43:50 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:43:50 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:43:50 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:43:50 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:43:50 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:43:50 WARN  AnnotationConfigServletWebServerApplicationContext:633 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController' defined in file [/Users/priyanshugour/Desktop/titan/target/classes/com/infinite/titan/controllers/AuthController.class]: Post-processing of merged bean definition failed
+2024-07-21 01:43:50 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:43:50 INFO  HikariDataSource:350 - HikariPool-3 - Shutdown initiated...
+2024-07-21 01:43:50 INFO  HikariDataSource:352 - HikariPool-3 - Shutdown completed.
+2024-07-21 01:43:50 INFO  StandardService:173 - Stopping service [Tomcat]
+2024-07-21 01:43:50 INFO  ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-21 01:43:50 ERROR SpringApplication:859 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController' defined in file [/Users/priyanshugour/Desktop/titan/target/classes/com/infinite/titan/controllers/AuthController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.2.8.jar:3.2.8]
+	at com.infinite.titan.TitanApplication.main(TitanApplication.java:10) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.2.8.jar:3.2.8]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.infinite.titan.controllers.AuthController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@601b6edd]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:757) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: com/infinite/titan/utils/UserMapper
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.infinite.titan.utils.UserMapper
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.8.jar:3.2.8]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1103) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 20 more
+2024-07-21 01:44:03 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-21 01:44:03 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 8575 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:44:03 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:44:03 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:44:03 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-21 01:44:03 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-21 01:44:04 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:44:04 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:44:04 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:44:04 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:44:04 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:44:04 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:44:04 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:44:04 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1686 ms
+2024-07-21 01:44:05 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2024-07-21 01:44:05 INFO  HikariPool:565 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42599104
+2024-07-21 01:44:05 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2024-07-21 01:44:05 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:44:05 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-07-21 01:44:05 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:44:05 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:44:06 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:44:06 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:44:06 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:44:06 WARN  JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 01:44:07 INFO  EndpointLinksResolver:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-21 01:44:07 INFO  DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3748f8bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b545db5, org.springframework.security.web.context.SecurityContextHolderFilter@934e3dd, org.springframework.security.web.header.HeaderWriterFilter@76e1fe2f, org.springframework.web.filter.CorsFilter@113d7ee4, org.springframework.security.web.authentication.logout.LogoutFilter@1f8a58bb, com.infinite.titan.security.JwtAuthenticationFilter@574c86f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b201488, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@399d5a2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45c37d58, org.springframework.security.web.session.SessionManagementFilter@7aba07cb, org.springframework.security.web.access.ExceptionTranslationFilter@68df9d2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bbc51f1]
+2024-07-21 01:44:07 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-07-21 01:44:07 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:44:07 INFO  TomcatWebServer:241 - Tomcat started on port 8888 (http) with context path ''
+2024-07-21 01:44:07 INFO  TitanApplication:56 - Started TitanApplication in 4.735 seconds (process running for 5.68)
+2024-07-21 01:44:07 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 01:44:07 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-21 01:44:07 INFO  DispatcherServlet:554 - Completed initialization in 3 ms
+2024-07-21 01:44:53 WARN  DefaultHandlerExceptionResolver:247 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.infinite.titan.models.Role` from String "CUSTOMER": not one of the values accepted for Enum class: [USER, ADMIN]]
+2024-07-21 01:46:54 INFO  LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-21 01:46:54 INFO  Http11NioProtocol:173 - Stopping ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:46:54 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:46:54 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2024-07-21 01:46:54 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2024-07-21 01:46:55 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 8575 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:46:55 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:46:55 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:46:55 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:46:55 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:46:55 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:46:55 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:46:55 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:46:55 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:46:55 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:46:55 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 694 ms
+2024-07-21 01:46:56 INFO  HikariDataSource:110 - HikariPool-2 - Starting...
+2024-07-21 01:46:56 INFO  HikariPool:565 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57c04d26
+2024-07-21 01:46:56 INFO  HikariDataSource:123 - HikariPool-2 - Start completed.
+2024-07-21 01:46:56 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:46:56 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:46:56 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:46:56 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:46:56 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:46:56 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:46:56 WARN  AnnotationConfigServletWebServerApplicationContext:633 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'authService': No qualifying bean of type 'com.infinite.titan.service.AuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-07-21 01:46:56 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:46:56 INFO  HikariDataSource:350 - HikariPool-2 - Shutdown initiated...
+2024-07-21 01:46:56 INFO  HikariDataSource:352 - HikariPool-2 - Shutdown completed.
+2024-07-21 01:46:56 INFO  StandardService:173 - Stopping service [Tomcat]
+2024-07-21 01:46:56 INFO  ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-21 01:46:56 ERROR LoggingFailureAnalysisReporter:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authService in com.infinite.titan.controllers.AuthController required a bean of type 'com.infinite.titan.service.AuthService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.infinite.titan.service.AuthService' in your configuration.
+
+2024-07-21 01:47:32 INFO  Version:21 - HV000001: Hibernate Validator 8.0.1.Final
+2024-07-21 01:47:32 INFO  TitanApplication:50 - Starting TitanApplication using Java 17.0.10 with PID 9596 (/Users/priyanshugour/Desktop/titan/target/classes started by priyanshugour in /Users/priyanshugour/Desktop/titan)
+2024-07-21 01:47:32 DEBUG TitanApplication:51 - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-07-21 01:47:32 INFO  TitanApplication:654 - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 01:47:32 INFO  DevToolsPropertyDefaultsPostProcessor:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-21 01:47:32 INFO  DevToolsPropertyDefaultsPostProcessor:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-21 01:47:33 INFO  RepositoryConfigurationDelegate:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 01:47:33 INFO  RepositoryConfigurationDelegate:211 - Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2024-07-21 01:47:34 INFO  TomcatWebServer:109 - Tomcat initialized with port 8888 (http)
+2024-07-21 01:47:34 INFO  Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:47:34 INFO  StandardService:173 - Starting service [Tomcat]
+2024-07-21 01:47:34 INFO  StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-21 01:47:34 INFO  [/]:173 - Initializing Spring embedded WebApplicationContext
+2024-07-21 01:47:34 INFO  ServletWebServerApplicationContext:296 - Root WebApplicationContext: initialization completed in 1755 ms
+2024-07-21 01:47:34 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2024-07-21 01:47:34 INFO  HikariPool:565 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b9b7be9
+2024-07-21 01:47:34 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2024-07-21 01:47:34 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 01:47:34 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-07-21 01:47:34 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2024-07-21 01:47:34 INFO  SpringPersistenceUnitInfo:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 01:47:35 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 01:47:35 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:47:35 DEBUG JwtAuthenticationFilter:240 - Filter 'jwtAuthenticationFilter' configured for use
+2024-07-21 01:47:36 WARN  JpaBaseConfiguration$JpaWebConfiguration:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 01:47:36 INFO  EndpointLinksResolver:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-07-21 01:47:36 INFO  DefaultSecurityFilterChain:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1849bdb3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5af7c267, org.springframework.security.web.context.SecurityContextHolderFilter@33c32375, org.springframework.security.web.header.HeaderWriterFilter@648a36c0, org.springframework.web.filter.CorsFilter@13a5b061, org.springframework.security.web.authentication.logout.LogoutFilter@302c02bc, com.infinite.titan.security.JwtAuthenticationFilter@65bff02a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11c3e136, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2842eafe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24a029bd, org.springframework.security.web.session.SessionManagementFilter@f9e5795, org.springframework.security.web.access.ExceptionTranslationFilter@25650b99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e1ca5a4]
+2024-07-21 01:47:36 INFO  OptionalLiveReloadServer:59 - LiveReload server is running on port 35729
+2024-07-21 01:47:36 INFO  Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8888"]
+2024-07-21 01:47:36 INFO  TomcatWebServer:241 - Tomcat started on port 8888 (http) with context path ''
+2024-07-21 01:47:36 INFO  TitanApplication:56 - Started TitanApplication in 4.844 seconds (process running for 5.709)
+2024-07-21 01:47:37 INFO  [/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 01:47:37 INFO  DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+2024-07-21 01:47:37 INFO  DispatcherServlet:554 - Completed initialization in 2 ms
+2024-07-21 01:48:11 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 01:48:11 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2024-07-21 01:48:11 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.

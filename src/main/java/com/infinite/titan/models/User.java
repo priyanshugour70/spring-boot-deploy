@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -47,7 +48,7 @@ public class User {
     private String profilePictureUrl;
 
     // Date of birth
-    private LocalDateTime dateOfBirth;
+    private LocalDate dateOfBirth;
 
     // Gender
     private String gender;

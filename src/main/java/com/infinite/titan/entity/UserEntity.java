@@ -11,6 +11,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -76,7 +77,7 @@ public class UserEntity {
     // Date of birth
     @Column(name = "date_of_birth")
     @NotNull(message = "Date of birth is required")
-    private LocalDateTime dateOfBirth;
+    private LocalDate dateOfBirth;
 
     // Gender
     @Column(name = "gender")
