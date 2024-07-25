@@ -1,10 +1,10 @@
-package com.infinite.titan;
+package com.gou.priyanshu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TitanApplicationTests {
+class BasicContainerApplicationTests {
 
 	@Test
 	void contextLoads() {

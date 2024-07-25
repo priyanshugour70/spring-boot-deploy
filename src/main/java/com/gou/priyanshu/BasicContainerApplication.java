@@ -1,13 +1,13 @@
-package com.infinite.titan;
+package com.gou.priyanshu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TitanApplication {
+public class BasicContainerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TitanApplication.class, args);
+		SpringApplication.run(BasicContainerApplication.class, args);
 	}
 
 }
