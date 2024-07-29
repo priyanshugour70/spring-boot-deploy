@@ -1,13 +1,17 @@
-package com.gou.priyanshu;
+package com.codewithdurgesh.blog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BasicContainerApplicationTests {
+class BlogAppApisApplicationTests {
+
+
 
 	@Test
 	void contextLoads() {
+
 	}
+
 
 }
